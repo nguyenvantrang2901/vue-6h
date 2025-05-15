@@ -7,11 +7,23 @@ const myAlt = "Image information"
 const imageHeight = 200
 const imageWidth = 300
 
+const objectOfArray = {
+    id : 'container',
+    class : 'wrapper',
+    style : 'background-color: green, font-size: 20 '
+}
 </script>
 <template>
     <h1>Home component</h1>    
-    <a v-bind:href="myChannel">My Channel</a>
-    <img :src="myImage" :alt="myAlt" :height="imageHeight" :width="imageWidth" />
+    <div>
+        <a v-bind:href="myChannel">My Channel</a>
+        <img :src="myImage" :alt="myAlt" :height="imageHeight" :width="imageWidth" />   
+    </div>
+
+    <div>
+        <h1>Dynamic bindings : </h1>
+        <div v-bind="objectOfArray">Hoàng Sa - Trường Sa là của Việt Nam</div>
+    </div>
 </template>
 
 <style scoped>
