@@ -30,11 +30,11 @@ const even = (nums)=> {
         <p>Danh sách dãy số:
             <template v-for="num in numbers">{{ num }}</template>
         </p>
-        <p>Số chẵn : 
-            <ul>
-                <li v-for="n in evenNumber"> {{ n }} </li>
-            </ul>
-        </p>
+        <p>Số chẵn : </p>
+        <ul>
+            <li v-for="n in evenNumber"> {{ n }} </li>
+        </ul>
+        
         <p>Dùng vòng for lồng nhau để tìm các số lẻ :</p>
         <ul v-for="nums in sets">
             <li v-for="n in even(nums)"> {{ n }}</li>
